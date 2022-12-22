@@ -219,7 +219,7 @@
                             		
                             		
                             		%>
-                            <%-- 		<c:forEach var="vo" items="${list}">
+                            < 		<c:forEach var="vo" items="${list}">
 							 			<tr>
 							 				<td><c:out value="${vo.NT_NO }"/></td>
 							 				<td>
@@ -229,7 +229,7 @@
 							 				<td><c:out value="${vo.NT_WRITEDATE }"/></td>
 							 				<td><c:out value="${vo.NT_HITS }"/></td>
 							 			</tr>
-							 		</c:forEach> --%>
+							 		</c:forEach> 
 							 		<!--이 부분을 js로 처리해야함  -->
 
                                     </tbody>
@@ -282,15 +282,12 @@
 </body>
 
 <script>
-	//테이블 초기화
+/* 	//테이블 초기화
 $('#listTable > tbody').empty();
 	
 	var a = '${list}';
 	
-	/* console.log("a", a);
-	console.log("split",a.split(","));
-	console.log(a instanceof Array); //false
-	console.log(typeof a); //tq 스트링이었네; */
+
 	
 	var a2 = a.split(',');
 	console.log(a2.length);
@@ -312,6 +309,10 @@ $('#listTable > tbody').empty();
 		});
 		$('#listTable > tbody').html(str);
 		console.log("str", str);
-	}
+	} */
+	/* console.log("a", a);
+	console.log("split",a.split(","));
+	console.log(a instanceof Array); //false
+	console.log(typeof a); //tq 스트링이었네; */
 </script>
 </html>

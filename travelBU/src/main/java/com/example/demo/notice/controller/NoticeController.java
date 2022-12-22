@@ -27,7 +27,7 @@ public class NoticeController {
 		log.info("메인화면페이지");
 		//log.info("vo값:" + vo);
 		md.addAttribute("list", noticeservice.list());
-		return "/notice/List";
+		return "/notice/table";
 	}
 	
 	@GetMapping("/testlist")
